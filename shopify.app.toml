@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "avp-app"
+client_id = "3bca6ebf1d416faf8ddefce246df73c3"
+application_url = "https://tex-lock-recommendation-rankings.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://tex-lock-recommendation-rankings.trycloudflare.com/auth/callback",
+  "https://tex-lock-recommendation-rankings.trycloudflare.com/auth/shopify/callback",
+  "https://tex-lock-recommendation-rankings.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "skincareavg.myshopify.com"
